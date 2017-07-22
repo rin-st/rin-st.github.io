@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+#XY{
+  width: 320px;
+  margin: 30px auto 10px;
+  height: 22px;
+  font-size: 22px;
+  text-align: center;
+}
+#result{
+  width: 302px;
+  margin: 10px auto;
+  height: 22px;
+  font-size: 22px;
+  text-align: center;
+}
+#ctc{
+  width: 302px;
+  margin: 30px auto 10px;
+  font-size: 14px;
+  height: 14px;
+  text-align: center;
+  color: #888;
+}
+.container{
+  width: 302px;
+  height: 302px;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+.field{
+  /*font-weight: normal;*/
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  line-height: 98px;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+}
+.red{
+  color: red;
+}

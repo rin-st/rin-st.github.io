@@ -1,0 +1,103 @@
+body{
+  background-color: #323232;
+}
+
+.container{
+  position: relative;
+  width: 1000px;
+  height: 800px;
+  background: url("../pics/NYback.jpg") 0px -100px no-repeat;
+  /*background: url("http://iam.priiincesss.com/wp-content/uploads/2016/06/image-1.jpeg") no-repeat;*/
+  margin: 30px auto;
+  box-shadow: 0 0 15px 3px black;
+  overflow: hidden;
+}
+
+.bright{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -475px 0 0 -545px;
+  box-sizing: padding-box;
+  width: 790px;
+  height: 650px;
+  border: 150px solid rgba(0,0,0,0.6);
+  border-radius: 160px;
+}
+.leftside{
+  float: left;
+  width: 470px;
+  color: white;
+}
+.lefttop{
+  margin-left: 40px;
+  margin-top: 280px;
+  height: 290px;
+  font-size: 110px;
+  font-weight: bold;
+  font-family: arial;
+  width: 430px;
+  border-bottom: .1px solid rgba(255,255,255,0.4);
+ /* box-shadow: 0 10px 6px -6px rgba(80,25,119,0.4),
+ inset 0 -10px 6px -6px rgba(80,25,119,0.4);*/
+}
+.lefttop:after{
+  content:"";
+  position: absolute;
+ /*   z-index: -1; /* hide shadow behind image */
+    box-shadow: 0 10px 6px -6px rgba(80,25,119,0.3), inset 0 -10px 6px -6px rgba(80,25,119,0.3);
+    width: 100px;
+    left: 370px;
+    height: 100px;
+    bottom: 80px;
+}
+.leftbot{
+  width: 430px;
+  margin-left: 40px;
+  line-height: 80px;
+  font-weight: normal;
+}
+.hash{
+  padding-right: 8px;
+}
+.rightside{
+  margin-left: 470px;
+}
+.righttop{
+  background: #fff;
+  padding: 50px 60px 74px 45px;
+  border-top-right-radius: 10px;
+}
+p{padding: 0; margin: 0;}
+.statue{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: sans-serif;
+  color: #2b2726;
+}
+.like{
+  padding-top: 16px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #2ebcee;
+}
+.gift{
+  font-size: 16px;
+  padding-top: 45px;
+  color: #989da3;
+  font-family: "open sans", sans-serif;
+  font-weight: normal;
+}
+.right-bot{
+  height: 250px;
+  background: url("../pics/NY.jpg") bottom right no-repeat;
+  border-bottom-right-radius: 10px;
+}
+.container>p{
+  position: absolute;
+  left: 140px;
+  bottom: 25px;
+  color: #fff;
+  font-size: 13px;
+}

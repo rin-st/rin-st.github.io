@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <title>Pomodoro clock</title>
+</head>
+  <header> Pomodoro clock </header>
+  <div id = "main" onclick = "stopAndGo()">
+    <div id = "current">
+      Work time!
+    </div>
+    <div id = "curTime">
+    </div>
+  </div>
+  <div class = "timers">
+    <div class = "timer session">
+      <p> Session Length</p>
+      <span id = 'decS' onclick="decreaseSession()">-</span>&nbsp;
+      <span id = 'sessValue'>25</span>&nbsp;
+      <span id = "incS" onclick="increaseSession()">+</span>
+    </div>
+    <div class = "timer breaks">
+      <p> Break Length</p>
+      <span id = 'decB' onclick="decreaseBreak()">-</span>&nbsp;
+      <span id = 'breakValue'>5</span>&nbsp;
+      <span id = "incB" onclick="increaseBreak()">+</span>
+    </div>
+  </div>
+<script type="text/javascript" src="js/script.js"></script>

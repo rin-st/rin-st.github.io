@@ -1,0 +1,13 @@
+.container{
+  margin-top: 60px;
+  font-size: 16px;
+}
+.caption{
+  padding: 5px;
+  font-size: 20px;
+}
+.well{
+  background-color: white;
+  padding: 4px;
+
+}

@@ -1,0 +1,26 @@
+.container{
+
+  width: 30%;
+  margin: 10% auto;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+span{
+  font-size: 20px;
+}
+#currentWeather{
+}
+
+#grade{
+  cursor: pointer;
+  color: blue;
+
+}
+.temperature{
+  font-size: 0;
+}
+
+img{
+  width: 75px;
+}

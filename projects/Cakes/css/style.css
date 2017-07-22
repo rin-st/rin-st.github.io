@@ -1,0 +1,559 @@
+@import url(reset.css);
+
+*{
+  box-sizing: border-box;
+}
+
+.row::after{
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/* end of prep*/
+body{
+  position: relative;
+}
+.menu-wrap{
+  background-color: #e31c76;
+  width: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.menu{
+  margin: 0 auto;
+}
+.menu ul{
+  list-style-type: none;
+  overflow: hidden;
+  display: none;
+}
+
+.menu li a{
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  transition: .4s;
+}
+
+.menu li a:hover{
+  color: black;
+}
+
+
+header{
+  background: url("http://wallpaperesque.com/wp-content/uploads/plixpapers1502/yummy_cake_wallpaper_background_29862.jpg") center center no-repeat;
+  width: 100%;
+}
+
+.transparent-header{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+}
+.hello{
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  padding-top: 350px;
+  padding-bottom: 25px;
+}
+h1{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+h2{
+  margin: 0 0 50px 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img{
+  vertical-align: middle;
+}
+
+h2 img{
+  display: none;
+}
+
+h2 span {
+    text-transform: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.block-wrap{
+  overflow: hidden;
+}
+
+
+.block1-left img, .block1-right img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.block1-left p em{
+  font-family: "roboto slab";
+  font-style: italic;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.block2-right{
+  overflow: hidden;
+}
+.block1-right p{
+  font-family: "roboto slab";
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.block2-right p, .block2-bottom p{
+  font-family: "roboto slab";
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.list1{
+  list-style-type: disc;
+  font-family: "roboto slab";
+  font-style: italic;
+  color: #e31c76;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.list1 a{
+  color: #e31c76;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.list1 a:hover{
+  color: #000;
+}
+.half{
+  width: 50%;
+  float: left;
+}
+.thumbnail img{
+  width: 100%;
+}
+.thumbnail a{
+  font: 22px/24px "roboto slab";
+  margin: 20px 0 10px;
+  display: block;
+  text-decoration: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.thumbnail p{
+  font: italic 13px "roboto slab";
+}
+footer{
+  padding: 60px;
+  text-align: center;
+  font-family: "open sans";
+  color: #999;
+  font-size: 13px;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover{
+  color: #e31c76;
+}
+/*for adopt*/
+  .col-sss-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+    padding: 15px;
+  }
+
+.menu, .block-wrap{
+  width: 100%;
+}
+
+.menu ul li{
+  width: 20%;
+  float: left;
+  list-style-type: none;
+  color: white;
+}
+
+.menu li a{
+  padding: 10px;
+  text-align: center;
+}
+header{
+    height: 100%;
+}
+.hello{
+  font-size: 17px;
+  line-height: 22px;
+}
+h1{
+  font: bold 30px/40px 'Roboto Slab';
+  margin-bottom: 135px;
+}
+
+h2{
+  font: 300 35px/40px 'Roboto Slab';
+  color: #110c14;
+  margin-top: 100px;
+}
+
+h3{
+  font: normal 22px/24px 'Roboto Slab';
+  margin-bottom: 20px;
+}
+
+h2 span{
+  font-size: 17px;
+  line-height: 22px;
+  color: #959595;
+}
+
+.block-wrap{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tort{
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+.forma{margin: 20px;}
+#country{width: 100%;}
+
+/*end of base*/
+
+@media (min-width: 561px) and (max-width: 768px){
+  .col-ss-1 {width: 8.33%;}
+  .col-ss-2 {width: 16.66%;}
+  .col-ss-3 {width: 25%;}
+  .col-ss-4 {width: 33.33%;}
+  .col-ss-5 {width: 41.66%;}
+  .col-ss-6 {width: 50%;}
+  .col-ss-7 {width: 58.33%;}
+  .col-ss-8 {width: 66.66%;}
+  .col-ss-9 {width: 75%;}
+  .col-ss-10 {width: 83.33%;}
+  .col-ss-11 {width: 91.66%;}
+  .col-ss-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+    padding: 15px;
+  }
+
+.menu, .block-wrap{
+  width: 100%;
+}
+
+/*.menu ul li{
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.menu li a{
+  padding: 20px;
+}*/
+.menu ul{
+  display: none;
+}
+
+
+select{
+  width: 100%;
+}
+header{
+    height: 700px;
+}
+.hello{
+  font-size: 17px;
+  line-height: 22px;
+}
+h1{
+  font: bold 30px/40px 'Roboto Slab';
+  margin-bottom: 135px;
+}
+
+h2{
+  font: 300 35px/40px 'Roboto Slab';
+  color: #110c14;
+  margin-top: 100px;
+}
+
+h3{
+  font: normal 22px/24px 'Roboto Slab';
+}
+
+h2 span{
+  font-size: 17px;
+  line-height: 22px;
+  color: #959595;
+  margin-top: 20px;
+}
+
+.block-wrap{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.tort{ float: none;}
+
+
+}
+/*end of 561-768 media}*/
+
+@media (min-width: 769px) and (max-width: 992px){
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+    padding: 15px;
+  }
+.menu ul{
+  display: block;
+}
+.menu, .block-wrap{
+  width: 750px;
+}
+
+.menu ul li{
+  width: 20%;
+  float: left;
+  text-align: center;
+  list-style: disc;
+  padding-right: 15px;
+}
+
+.menu li a{
+  padding: 20px;
+}
+header{
+    height: 700px;
+}
+.hello{
+  font-size: 17px;
+  line-height: 22px;
+}
+h1{
+  font: bold 54px/68px 'Roboto Slab';
+  margin-bottom: 135px;
+}
+
+h2{
+  font: 300 54px/49px 'Roboto Slab';
+  color: #110c14;
+  margin-top: 100px;
+}
+
+h2 img{
+  display: inline;
+}
+
+h3{
+  font: normal 22px/24px 'Roboto Slab';
+  margin-bottom: 20px;
+}
+
+h2 span{
+  font-size: 17px;
+  line-height: 22px;
+  color: #959595;
+  margin-top: 10px;
+}
+
+.block-wrap{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.tort{ float: none;}
+
+.forma{display: none;}
+}/*end of 768-991 media}*/
+
+@media (min-width: 993px) and (max-width: 1200px){
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+    padding: 15px;
+  }
+
+.menu, .block-wrap{
+  width: 970px;
+}
+
+.menu ul{
+  display: block;
+}
+h2 img{
+  display: inline;
+}
+
+.menu ul li{
+  width: 20%;
+  float: left;
+  text-align: center;
+  list-style: disc;
+  padding-right: 15px;
+}
+
+.menu li a{
+  padding: 20px;
+}
+header{
+    height: 700px;
+}
+.hello{
+  font-size: 17px;
+  line-height: 22px;
+}
+h1{
+  font: bold 54px/68px 'Roboto Slab';
+  margin-bottom: 135px;
+}
+
+h2{
+  font: 300 54px/49px 'Roboto Slab';
+  color: #110c14;
+  margin-top: 100px;
+}
+
+h3{
+  font: normal 22px/24px 'Roboto Slab';
+  margin-bottom: 20px;
+}
+
+h2 span{
+  font-size: 17px;
+  line-height: 22px;
+  color: #959595;
+  margin-top: 10px;
+}
+
+.block-wrap{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.forma{display: none;}
+}/*end of 992-1200 media}*/
+
+@media (min-width: 1201px){
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+    padding: 15px;
+  }
+
+.menu{
+  width: 1200px;
+}
+
+.menu ul{
+  display: block;
+}
+
+.menu ul li{
+  width: 20%;
+  float: left;
+  text-align: center;
+  list-style: disc;
+  padding-right: 15px;
+}
+
+.menu li a{
+  padding: 20px;
+}
+header{
+    height: 700px;
+}
+.hello{
+  font-size: 17px;
+  line-height: 22px;
+}
+h1{
+  font: bold 54px/68px 'Roboto Slab';
+  margin-bottom: 135px;
+}
+
+h2{
+  font: 300 54px/49px 'Roboto Slab';
+  color: #110c14;
+  margin-top: 100px;
+}
+
+h2 img{
+  display: inline;
+}
+
+h3{
+  font: normal 22px/24px 'Roboto Slab';
+  margin-bottom: 20px;
+}
+
+h2 span{
+  font-size: 17px;
+  line-height: 22px;
+  color: #959595;
+  margin-top: 10px;
+}
+
+.block-wrap{
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.forma{display: none;}
+}/*end of 1200+ media}*/

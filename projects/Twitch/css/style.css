@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  text-align: center;
+}
+.container{
+  border: 1px solid black;
+  border-bottom: none;
+  width: 800px;
+  margin: 50px auto;
+}
+.menu{
+}
+.menu ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid black;
+  color: #858585;
+}
+.menu li{
+  display: inline;
+  float: left;
+  padding: 15px;
+  border-left: 1px solid #e2e2e2;
+  width: 266px;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+.menu li:first-child{
+  border-left: none;
+}
+#allbut{
+  color: black;
+  text-shadow: 0 0 1px #777;
+}
+#allbut:hover{
+  text-shadow: 0 0 4px #777 !important;
+  color: black !important;
+  cursor: pointer;
+}
+#onlinebut:hover{
+  text-shadow: 0 0 4px lightgreen !important;
+  color: green !important;
+  cursor: pointer;
+}
+#offlinebut:hover{
+  text-shadow: 0 0 4px pink !important;
+  color: red !important;
+  cursor: pointer;
+}
+.canal{
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+.canal span{
+  display: inline-block;
+  text-align: center;
+  line-height: 78px;
+  white-space: nowrap;
+  overflow: hidden;
+  /*padding: 20px;
+  border: 1px solid red;*/
+}
+.canal img{
+  width: 80px;
+  padding: 5px;
+  border-radius: 10px;
+  float: left;
+}
+.name{
+  width: 120px;
+}
+.description{
+  width: 480px;
+}
+.status{
+  /*float: right;
+  padding-right: 60px;*/
+  width: 118px;
+  font-style: italic;
+}
+.on{
+  background-color: lightgreen;
+  color: green;
+}
+.off{
+  background-color: pink;
+  color: red;
+}
+.hide{
+  display: none;
+}

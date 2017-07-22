@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Calculator</title>
+</head>
+<div class="container">
+<form>
+  <input type="text" readonly value="0" id="ress" size=30 />
+  <input type="text" readonly value=0 id="results" size=10 />
+  <div class="buttcont">
+  <input type="reset" value="AC"  class="butt red" onclick="clears()"/>
+  <input type="button" value="CE"  class="butt red" onclick = "ac()"/>
+    <input type="button" value="/" onclick="divide()" class="butt yel"/>
+    <input type="button" value="x" onclick="multiply()" class="butt yel"/>
+    <input type="button" value=7 onclick="inputs(7)" class="butt"/>
+    <input type="button" value=8 onclick="inputs(8)" class="butt"/>
+    <input type="button" value=9 onclick="inputs(9)" class="butt"/>
+    <input type="button" value="-" onclick="substract()" class="butt yel"/>
+    <input type="button" value=4 onclick="inputs(4)" class="butt"/>
+    <input type="button" value=5 onclick="inputs(5)" class="butt"/>
+    <input type="button" value=6 onclick="inputs(6)" class="butt"/>
+    <input type="button" value="+" onclick="addition()" class="butt yel"/>
+  <input type="button" value=1 onclick="inputs(1)" class="butt"/>
+  <input type="button" value=2 onclick="inputs(2)" class="butt"/>
+  <input type="button" value=3 onclick="inputs(3)" class="butt"/>
+  <input type="button" value="=" id="equal" onclick="equals()" class="butt butteq yel"/>
+    <input type="button" value=0 onclick="inputs(0)" class="butt butt0"/>
+    <input type="button" value="." onclick="inputs('.')" class="butt"/>
+  </div>
+</form>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
