@@ -56,7 +56,7 @@ end of reset
 }
 body{
   font-family: "roboto slab", serif;
-  background-color: #fafafa;
+  background-color: white;/* #fafafa;*/
   position: relative;
 }
 header, footer{
@@ -64,7 +64,7 @@ header, footer{
 }
 header{
   position: fixed;
-  background-color: #fafafa;
+  background-color: white;/*#fafafa;*/
 }
 .logo{
   float: left;
