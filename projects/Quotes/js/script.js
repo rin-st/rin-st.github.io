@@ -2,8 +2,7 @@ var quotes = ["Live as if you were to die tomorrow. Learn as if you were to live
               "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.", "Ralph Waldo Emerson",
               "To live is the rarest thing in the world. Most people exist, that is all.","Oscar Wilde",
              "That which does not kill us makes us stronger.","Friedrich Nietzsche",
-             "Do what you feel in your heart to be right, for you’ll be criticized anyway.", "Eleanor Roosevelt",
-             "Если кисуша любит, то ниукает","Кисенька"];
+             "Do what you feel in your heart to be right, for you’ll be criticized anyway.", "Eleanor Roosevelt"];
 
 var colors= ["#6c3624", "#bd00ff", "#4a474b", "#f600ff", "#008080", "#C71585", "#6b8184", "#ce7476", "#05486c", "#246c36", "#c8543b", "#6c2436", "#333c4f", "#36246c", "#b58"];
 
