@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <menta charset  = "utf-8">
+  <link rel = "stylesheet" href = "css/reset.css">
+  <link rel = "stylesheet" href = "css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <title>Portfolio - Rinat.tech</title>
+</head>
+<header>
+  <div class = "header-container">
+    <a href = "index.html" class = "logo"><!--Сделать анимацию-->
+      Rinat.tech
+    </a>
+    <ul class = "menu">
+      <li><a href = "about.html">About</a></li>
+      <li><a href = "">Portfolio</a></li>
+      <li><a href = "contact.html">Contact</a></li>
+    </ul>
+</div>
+</header>
+<body>
+  <div class = "block-container-0">
+    <div class = "title-text-container">
+        <h1>portfolio.</h1>
+        <p class = "title-text-0">Здесь вы можете ознакомиться с некоторыми моими работами, а также c краткими описаниями к ним.<br></p>
+        <p class = "title-text-1">  *Я не стал добавлять в список данный сайт.
+        При его создании я использовал HTML, SASS, Gulp, Javascript</p>
+
+    </div>
+  </div>
+  <div class = "block-container-1">
+    <div class = "work">
+      <div class = "work-image">
+        <img src = "img/simon.jpg">
+      </div>
+      <div class = "work-text-container ml-60">
+        <h2 class = "work-text-h2 prim3">Simon game</h2>
+        <h3 class = "work-text-h3 prim6">HTML, CSS, Javascript</h3>
+        <p class = "work-text prim3">Игра, в которой нужно нажимать на цвета в той же
+          последовательности, в которой они были показаны. Вы победите, если сможете
+          повторить 20 цветов. Режим Strict - игра до первой ошибки.</p>
+        <a href = "projects/Simon-game/index.html" target="_blank" class = "work-text-button prim6">Проверить свою память</a>
+    </div>
+    </div>
+  </div>
+
+
+    <div class = "block-container-2">
+      <div class = "work">
+        <div class = "work-text-container">
+          <h2 class = "work-text-h2">URL Shortener</h2>
+          <h3 class = "work-text-h3">Javascript, Node.js, Express.js, Mongodb</h3>
+          <p class = "work-text white-text">Приложение, которое укорачивает URL,
+            введенный специальным образом в адресной строке. Адрес сохраняется в
+            базе данных. Если URL не валидный, выдается предупреждение. Результат выдается в JSON.</p>
+          <a href = "https://shs.glitch.me/" target = "_blank" class = "work-text-button prim">Укоротить</a>
+        </div>
+        <div class = "work-image ml-60">
+          <img src = "img/shs.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class = "block-container-3">
+      <div class = "work">
+        <div class = "work-image">
+          <img src = "img/imagesearch.jpg">
+        </div>
+        <div class = "work-text-container ml-60">
+          <h2 class = "work-text-h2">Google image search</h2>
+          <h3 class = "work-text-h3">Javascript, Node.js, Express.js, google search api</h3>
+          <p class = "work-text">Приложение использует URL из адресной и формирует
+             из него поисковый запрос. Затем выдает результаты поиска картинок по
+             данному запросу в формате JSON. Для наглядности желателен JSON formatter в браузере. </p>
+          <a href = "https://searchimg.glitch.me/" target = "_blank" class = "work-text-button prim">Поискать</a>
+        </div>
+      </div>
+    </div>
+
+    <div class = "block-container-4">
+      <div class = "work">
+        <div class = "work-text-container">
+          <h2 class = "work-text-h2">Tic tac toe</h2>
+          <h3 class = "work-text-h3">HTML, CSS, Javascript</h3>
+          <p class = "work-text white-text">Первый эксперимент с искусственным интеллектом.
+            Крестики-нолики, в которые невозможно выиграть.</p>
+          <a href = "projects/Tic-tac-toe/index.html" target="_blank" class = "work-text-button prim">Попытаться</a>
+        </div>
+        <div class = "work-image ml-60">
+          <img src = "img/tic-tac-toe.jpg">
+        </div>
+      </div>
+    </div>
+
+  <div class = "block-container-5">
+    <div class = "work">
+      <div class = "work-image">
+        <img src = "img/twitch.jpg">
+      </div>
+      <div class = "work-text-container ml-60">
+        <h2 class = "work-text-h2">Twitch.tv streams</h2>
+        <h3 class = "work-text-h3">HTML, CSS, Javascript, AJAX, Twitch API</h3>
+        <p class = "work-text">Список из нескольких стримов на Twitch.tv. Отображает статус и описание
+          каждого стрима. Таблицу можно упорядочить в зависимости от статуса (online/offline).</p>
+        <a href = "projects/Twitch/index.html" target="_blank" class = "work-text-button prim">Посмотреть</a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "block-container-6">
+    <div class = "work">
+      <div class = "work-text-container">
+        <h2 class = "work-text-h2">Wikipedia's search</h2>
+        <h3 class = "work-text-h3">HTML, CSS, Javascript, Ajax, Wikipedia API</h3>
+        <p class = "work-text">Вводим в поисковую строку запрос и получаем десять
+          статей из википедии подходящих к этому запросу.</p>
+        <a href = "projects/Wiki-search/index.html" target="_blank" class = "work-text-button prim">Поискать</a>
+      </div>
+      <div class = "work-image ml-60">
+        <img src = "img/wiki.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class = "block-container-1">
+    <div class = "work">
+      <div class = "work-image">
+        <img src = "img/quotes.jpg">
+      </div>
+      <div class = "work-text-container ml-60">
+        <h2 class = "work-text-h2 prim3">Random Quote Machine</h2>
+        <h3 class = "work-text-h3 prim6">HTML, CSS, Javascript</h3>
+        <p class = "work-text prim3">Приложение генерирует случайные цитаты великих
+           людей. Можно отправить в твиттер.</p>
+        <a href = "projects/Quotes/index.html" target="_blank" class = "work-text-button prim6">Набраться мудрости</a>
+    </div>
+    </div>
+  </div>
+
+  <div class = "block-container-2">
+    <div class = "work">
+      <div class = "work-text-container">
+        <h2 class = "work-text-h2">Calculator</h2>
+        <h3 class = "work-text-h3">HTML, CSS, Javascript</h3>
+        <p class = "work-text white-text">Калькулятор, в котором реализованы основные
+           математические действия, а также дополнительная строка для отображения выполняемых действий</p>
+        <a href = "projects/Calculator/index.html" target="_blank" class = "work-text-button prim">Посчитать</a>
+      </div>
+      <div class = "work-image ml-60">
+        <img src = "img/calculator.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class = "block-container-3">
+    <div class = "work">
+      <div class = "work-image">
+        <img src = "img/pomodoro.jpg">
+      </div>
+      <div class = "work-text-container ml-60">
+        <h2 class = "work-text-h2">Pomodoro clock</h2>
+        <h3 class = "work-text-h3">HTML, CSS, Javascript</h3>
+        <p class = "work-text">Небезызвестные часы Помодоро. Можно
+          настроить таймеры работы и отдыха.</p>
+        <a href = "projects/Pomodoro-clock/index.html" target="_blank" class = "work-text-button prim">За работу</a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "block-container-4">
+    <div class = "work">
+      <div class = "work-text-container">
+        <h2 class = "work-text-h2">Cakes</h2>
+        <h3 class = "work-text-h3">HTML, CSS</h3>
+        <p class = "work-text">Адаптивная заготовка сайта, посвященного сладостям.</p>
+        <a href = "projects/Cakes/index.html" target="_blank" class = "work-text-button prim">Посмотреть</a>
+      </div>
+      <div class = "work-image ml-60">
+        <img src = "img/cakes.jpg">
+      </div>
+    </div>
+  </div>
+
+</body>

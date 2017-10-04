@@ -1,0 +1,380 @@
+/*@import "part"*/
+$primary-grey: #868695
+/*$primary-orange: #e84242*/
+$primary-orange: rgb(206, 49, 0)
+$primary: #313131
+$noto-serif: 'Noto Serif', Calibri, Helvetica, Arial, sans-serif
+$noto-sans: 'Noto Sans', Helvetica, Arial, sans-serif
+*
+  box-sizing: border-box
+  color: $primary
+
+.header-container
+  width: 1024px
+  margin: 0 auto
+  padding: 10px 0
+  overflow: hidden
+  font-family: $noto-sans
+
+.logo
+  float: left
+  font-size: 40px
+  line-height: 58px
+  margin-left: 10px
+  text-decoration: none
+  font-weight: bold
+
+.logo:hover
+  color: #666
+
+.menu
+  float: right
+  display: flex
+  justify-content: flex-end
+  font-size: 16px
+
+.menu
+  li
+    a
+      display: block
+      padding: 20px 0
+      margin: 0 20px
+      color: $primary-grey
+      position: relative
+      text-decoration: none
+
+.menu
+  li
+    a::after
+      content: ''
+      background-color: #ddd
+      width: 100%
+      height: 1px
+      position: absolute
+      bottom: 17px
+      right: 0
+      opacity: 0
+      transition: all .3s
+
+.menu
+  li
+    a:hover
+      color: $primary-orange
+      cursor: pointer
+
+.menu
+  li
+    a:hover::after
+      bottom: 10px
+      height: 2px
+      opacity: 1
+
+.main-menu
+  color: white
+  background-color: transparent
+
+.main-menu:hover
+  color: white
+  opacity: 0.9
+
+.main-menu
+  li
+    a
+      color: white
+
+.main-menu
+  li
+    a::after
+      background-color: #fff
+
+.main-menu
+  li
+    a:hover
+      color: white
+      opacity: 0.9
+
+h1
+	font: bold 90px/125px 'Noto Sans'
+	text-align: center
+	color: $primary-orange
+	position: relative
+
+h1::after
+  position: absolute
+  bottom: -38px
+  left: 50%
+  margin-left: -50px
+  width: 100px
+  height: 5px
+  background-color: #eee
+  content: ''
+
+.block-container-0
+  background-color: #fafafa
+
+.title-text-container
+  width: 1024px
+  margin: 0 auto
+  padding: 120px 0 30px
+  text-align: center
+
+.title-text-container
+  p
+    margin: 3em auto
+    color: #868695
+    text-align: center
+    font-size: 27px
+    font-family: $noto-serif
+    line-height: 36px
+    max-width: 750px
+
+.title-text-container
+  .title-text-0
+    margin: 3em auto 0
+
+.title-text-container
+  .title-text-1
+    margin: 0 auto 3em
+    font-size: 18px
+    text-align: left
+
+.block-container-1
+  background-color: #eaeaea
+
+.work
+  width: 1024px
+  margin: 0 auto
+  font-size: 0
+
+.work-image
+  width: 40%
+  display: inline-block
+  vertical-align: middle
+
+.work-image
+  img
+    width: 100%
+    margin-top: 30px
+
+.work-text-container
+  width: calc(100% - 40% - 60px)
+  display: inline-block
+  vertical-align: middle
+
+.ml-60
+  margin-left: 60px
+
+.work-text-h2
+  font-size: 27px
+  font-weight: bolder
+  font-family: $noto-sans
+  color: white
+  text-align: left
+
+.work-text-h3
+  font-size: 14px
+  text-transform: uppercase
+  margin: 14px 0
+  font-family: $noto-sans
+  color: white
+
+.work-text
+  font-size: 18px
+  line-height: 150%
+  margin: 27px 0
+  font-family: $noto-serif
+  color: white
+  opacity: 0.8
+  text-align: left
+
+.work-text-button
+  display: inline-block
+  border: 2px solid white
+  border-radius: 4px
+  color: white
+  font-size: 16px
+  text-decoration: none
+  text-transform: capitalize
+  padding: 10px 20px
+  margin-top: 20px
+  opacity: 0.6
+  transition: all .3s
+  font-family: $noto-sans
+
+.work-text-button:hover
+  opacity: 1
+
+.main-button
+  display: inline
+  text-align: center
+  color: green
+  border-color: #fff
+  color: #fff
+  padding: 14px 35px 17px
+  font-size: 1rem
+  line-height: 1px
+  opacity: 1
+
+.main-button:hover
+  background-color: white
+  color: $primary-orange
+  padding: 14px 45px 17px
+
+
+.prim3
+  color: $primary
+
+.prim6
+  border-color: #666
+  color: #666
+
+.prim9
+  color: #999
+
+.block-container-2
+  background-color: $primary-orange
+  //background-color: #e23723
+
+.white-text
+  opacity: 0.9
+
+.block-container-3
+  background-color: #252632
+
+.block-container-4
+  background-color: #aa8862
+
+.block-container-5
+  background-color: #27348f
+
+.block-container-6
+  background-color: #013d5f
+
+.about-contact
+  display: inline-block
+  font-size: 26px
+  font-family: $noto-serif
+  font-weight: bolder
+  padding: 68px 0
+  margin: 26px auto 0
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+.about-contact
+  a
+    color: $primary-orange
+
+.mid-about
+  width: 750px
+  margin: 0 auto
+  padding: 45px 0 0
+  text-align: center
+
+.contact-container
+    background-image: url("../img/spb.jpg")
+    background-size: cover
+    background-attachment: fixed
+    padding-bottom: 140px
+
+.form-container
+  background-color: transparent
+
+.form-contact
+  background-color: rgba(206, 49, 0, 0.8)
+  width: 750px
+  margin: 140px auto 0
+  padding: 40px
+
+.form-title-container
+  text-align: center
+
+.form-title
+  font-family: $noto-serif
+  display: inline-block
+  margin: 0 0 40px
+  padding-bottom: 30px
+  border-bottom: 1px solid rgba(256,256,256,0.5)
+  color: #fff
+  font-size: 24px
+  font-weight: bolder
+
+input[type=text], input[type=email], textarea
+  padding: 10px 15px
+  border: none
+  border-radius: 2px
+  background-color: rgba(256,256,256,0.35)
+  color: #fff
+  font-size: 16px
+  font-family: $noto-serif
+  transition: all 0.2s
+  outline: none
+
+input[type=text], input[type=email]
+  width: 320px
+  margin-bottom: 36px
+
+input[type=text]
+  margin-right: 30px
+
+textarea
+  width: 100%
+  height: 180px
+
+::-webkit-input-placeholder
+  color: #fff
+::-moz-placeholder
+  color: #fff
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus
+  background-color: rgba(256,256,256,0.65)
+  color: $primary
+
+input[type=submit]
+  display: block
+  margin: 40px auto 0
+  padding: 15px 35px 17px
+  border: none
+  border-radius: 3px
+  background-color: #222
+  color: #fff
+  text-transform: capitalize
+  font-size: 16px
+  font-family: $noto-serif
+  line-height: 1em
+  cursor: pointer
+  transition: all 0.2s
+
+input[type=submit]:hover
+  color: $primary-orange
+  background-color: white
+  padding: 15px 40px 17px
+
+.main-image
+  background-image: url("../img/prog.jpg")
+  background-size: cover
+
+.main-container
+  background-color: rgba(206, 49, 0, 0.8)
+  height: 100vh /*100vh подумать, как выравнивать высоту*/
+
+.main-page
+  background-color: transparent
+
+.main-page
+  h1
+    color: #fff
+
+.main-page
+  p
+    color: #fff
+
+/*.contact-footer
+  text-align: center*/
+
+/*.contact-footer
+  span
+    display: inline-block
+    font-size: 16px
+    font-family: $noto-sans
+    color: $primary
+    font-weight: bold
+    margin-top: 60px*/
