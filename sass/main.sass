@@ -5,6 +5,7 @@ $primary-orange: rgb(206, 49, 0)
 $primary: #313131
 $noto-serif: 'Noto Serif', Calibri, Helvetica, Arial, sans-serif
 $noto-sans: 'Noto Sans', Helvetica, Arial, sans-serif
+
 *
   box-sizing: border-box
   color: $primary
@@ -28,7 +29,7 @@ $noto-sans: 'Noto Sans', Helvetica, Arial, sans-serif
   color: #666
 
 .menu
-  float: right
+  margin: 0
   display: flex
   justify-content: flex-end
   font-size: 16px
@@ -42,10 +43,6 @@ $noto-sans: 'Noto Sans', Helvetica, Arial, sans-serif
       color: $primary-grey
       position: relative
       text-decoration: none
-/*.menu
-  li
-    a:last-of-type
-      margin-right: 0*/
 
 .menu
   li
@@ -148,6 +145,7 @@ h1::after
 .work
   width: 1024px
   margin: 0 auto
+  padding: 0 10px
   font-size: 0
 
 .work-image
@@ -371,9 +369,14 @@ input[type=submit]:hover
   p
     color: #fff
 
-@media (max-width: 1023px)
+@media (max-width: 1040px)
   .header-container, .title-text-container, .work
     width: 100%
+
+  .work
+    padding: 20px
+
+
 
 /*.contact-footer
   text-align: center*/

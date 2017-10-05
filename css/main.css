@@ -24,7 +24,7 @@
   color: #666; }
 
 .menu {
-  float: right;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,6 +131,7 @@ h1::after {
 .work {
   width: 1024px;
   margin: 0 auto;
+  padding: 0 10px;
   font-size: 0; }
 
 .work-image {
@@ -361,9 +362,11 @@ input[type=submit]:hover {
 .main-page p {
   color: #fff; }
 
-@media (max-width: 1023px) {
+@media (max-width: 1040px) {
   .header-container, .title-text-container, .work {
-    width: 100%; } }
+    width: 100%; }
+  .work {
+    padding: 20px; } }
 
 /*.contact-footer
   text-align: center*/
