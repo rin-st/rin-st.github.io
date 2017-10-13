@@ -1,0 +1,420 @@
+$light-grey: #ebebeb
+$numbers-grey: #999999
+$search-color: #f4f4f4
+$roboto: 'Roboto', sans-serif
+
+*
+  box-sizing: border-box
+  font-family: $roboto
+
+.search-row
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  height: calc(40px + 4vh)
+  background-color: $search-color
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .4)
+
+.loupe
+  color: #b1b1b1
+
+.search
+  margin: 0 5% 0 1%
+  padding: 6px 0 6px 8px
+  border-radius: 3px
+  background-color: white
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .4) inset
+  border: none
+  position: relative
+
+.search-area
+  font-family: $roboto
+  font-size: 14px
+  border: none
+  outline: none
+
+.x-button
+  color: $numbers-grey
+  padding: 0 8px
+  font-size: 12px
+
+.x-button:hover
+  color: #666
+  cursor: pointer
+
+.results-area-container
+  position: absolute
+  display: none
+  left: 0
+  top: 140%
+  width: 100%
+  z-index: 3
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+  padding-right: 5px
+  background-color: white
+
+.results-area
+  max-height: 392px
+  overflow: auto
+  background-color: white
+
+.results-area::-webkit-scrollbar
+	width: 7px
+	background-color: transparent
+
+.results-area::-webkit-scrollbar-thumb
+	border-radius: 7px
+	background-color: #7a7a7a
+
+.results-area::before
+  content: ""
+  position: absolute
+  top: -6px
+  left: 15%
+  margin-left: -6px
+  border-width: 6px
+  border-style: solid
+  border-color: white transparent transparent white
+  transform: rotate(45deg)
+  z-index: 0
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, .2)
+
+.result-container
+  margin: 0 4px
+  border-bottom: 1px solid $light-grey
+
+.result
+  margin: 4px 0
+  font-size: 13px
+  overflow: hidden
+  position: relative
+
+.result::before
+  content: ''
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background: linear-gradient(to right, transparent, transparent 80%, white 90%)
+  pointer-events: none
+
+.result:hover
+  background-color: #189eff
+  color: white
+  cursor: pointer
+
+.result:hover::before
+  background: linear-gradient(to right, transparent, transparent 80%, #189eff 90%)
+
+.result-title
+  font-family: $roboto
+  font-weight: bold
+  padding: 4px
+  white-space: nowrap
+
+.result-date
+  font-family: $roboto
+  font-size: 11px
+  padding: 3px
+  margin-bottom: 4px
+  white-space: nowrap
+
+.info
+  height: calc(40px + 3vh)
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.shadow-button
+  margin: 0 1%
+  border-radius: 3px
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3) inset
+  font-size: 12px
+  color: #676767
+
+.shadow-button:first-of-type
+  margin-left: 5%
+
+.shadow-button:hover
+  cursor: pointer
+  background-color: #eee
+
+.arrow
+  font-size: 7px
+  padding: 5px
+  font-family: $roboto
+
+.c-month
+  font-weight: bold
+  font-size: 14px
+  font-family: $roboto
+
+.today
+  padding: 3px 8px
+  font-family: $roboto
+
+.month
+  font-weight: bold
+
+.calendar-container
+  display: grid
+  grid-template-columns: repeat(7, calc(100%/7))
+  grid-template-rows: repeat(6, calc(100%/6))
+  height: calc(100vh - 40px - 4vh - 30px - 3vh - 6vh)
+  margin: 0 5%
+  border: 1px solid $light-grey
+
+.day
+  border: 1px solid $light-grey
+  position: relative
+
+.event-form
+  display: none
+  position: absolute
+  padding: 22px
+  width: 300px
+  background-color: white
+  border: 1px solid $light-grey
+  z-index: 1
+  font-size: 12px
+  box-shadow: -2px 0 6px rgba(0, 0, 0, .2)
+
+.top-left
+  left: 3vw
+  top: -30px
+
+.top-right
+  left: -316px
+  top: -30px
+
+.bottom-left
+  left: 3vw
+  bottom: -30px
+
+.bottom-right
+  left: -316px
+  bottom: -30px
+
+.top-left::before, .top-right::before, .bottom-left::before, .bottom-right::before
+  content: ""
+  position: absolute
+  border-width: 8px
+  border-style: solid
+  border-color: white transparent transparent white
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, .2)
+
+.top-left::before
+  left: -8px
+  top: 30px
+  transform: rotate(-45deg)
+
+.bottom-left::before
+  left: -8px
+  bottom: 30px
+  transform: rotate(-45deg)
+
+.top-right::before
+  top: 30px
+  right: -8px
+  transform: rotate(135deg)
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, .1)
+
+.bottom-right::before
+  right: -8px
+  bottom: 30px
+  transform: rotate(135deg)
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, .1)
+
+
+.event-name, .event-date, .event-peoples, .event-description
+  padding: 4px 6px
+  margin-bottom: 5px
+  width: 100%
+  border: none
+  border-radius: 2px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3) inset
+
+.event-name
+  font-size: 14px
+
+.event-description
+  resize: none
+  margin-top: 36px
+  height: 115px
+  font-size: 12px
+  padding: 8px
+
+.event-confirm, .event-delete
+  margin: 17px 22px 0 0
+  font-size: 11px
+  padding: 0px 6px
+
+.number
+  position: relative
+  padding: 3% 0 0 5%
+  color: $numbers-grey
+  font-size: 14px
+
+.span-week, .spanNumber
+  font-family: $roboto
+  font-size: 12px
+
+.task
+  font-family: $roboto
+  font-size: 13px
+  padding: 3% 5%
+
+.x-form
+  position: absolute
+  right: 8px
+  top: 8px
+
+.x-form:hover
+  color: #666
+  cursor: pointer
+
+.week-day
+  display: none
+
+@media (max-width: 1024px)
+  .task, .number,
+  .search-area, .result,
+  .c-month
+    font-size: 16px
+
+  .event-form
+    padding: 10px
+    width: 220px
+    font-size: 12px
+
+  .top-left
+    left: 20px
+    top: -30px
+
+  .top-right
+    left: -236px
+    top: -30px
+
+  .bottom-left
+    left: 20px
+    bottom: -30px
+
+  .bottom-right
+    left: -236px
+    bottom: -30px
+
+  .x-form
+    right: 2px
+    top: 2px
+
+@media (max-width: 767px)
+  .search-row
+    position: fixed
+    z-index: 3
+    width: 100%
+
+  .info
+    position: fixed
+    top: calc(40px + 4vh)
+    z-index: 2
+    width: 100%
+    background-color: white
+
+  .calendar-container
+    margin: 0
+    padding-top: calc(40px + 4vh + 40px + 3vh)
+
+  .event-form
+    padding: 10px
+    width: 300px
+
+  .event-description
+    height: 200px
+
+  .task, .number,
+  .search-area, .result,
+  .c-month,
+  .span-week, .spanNumber
+    font-size: 24px
+
+  .shadow-button
+    font-size: 20px
+
+  .result-date
+    font-size: 22px
+
+  .event-name, .event-date, .event-peoples, .event-description
+    font-size: 26px
+
+  .event-confirm, .event-delete
+    font-size: 20px
+
+  .x-button
+    font-size: 16px
+
+  .x-button
+    padding: 6px
+
+  .x-form
+    right: 0
+    top: 0
+
+  .not-current
+    display: none
+
+  .calendar-container
+    display: block
+    width: 90%
+    margin: 0 5%
+    border: 1px solid $light-grey
+
+  .day
+    height: 100px
+
+  .week-day
+    display: inline
+
+  .top-left, .top-right, .bottom-left, .bottom-right
+    left: 20px
+    top: 4px
+    right: auto
+    bottom: auto
+    display: none
+
+  .top-left::before, .top-right::before, .bottom-left::before, .bottom-right::before
+    left: -8px
+    top: 40px
+    right: auto
+    bottom: auto
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, .2)
+    transform: rotate(-45deg)
+
+  @media (max-width: 375px)
+    .event-form
+      padding: 10px
+      width: 250px
+
+    .event-description
+      height: 120px
+
+    .task, .number,
+    .search-area, .result,
+    .c-month,
+    .span-week, .spanNumber
+      font-size: 20px
+
+    .shadow-button
+      font-size: 16px
+
+    .result-date
+      font-size: 18px
+
+    .event-name, .event-date, .event-peoples, .event-description
+      font-size: 22px
+
+    .event-confirm, .event-delete
+      font-size: 16px
+
+    .x-button
+      font-size: 14px
